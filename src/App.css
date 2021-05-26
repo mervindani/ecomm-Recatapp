@@ -1,6 +1,10 @@
 body {
-  font-family: "Heebo", sans-serif;
+  font-family: "Squada One", cursive;
   padding: 20px 50px;
-  background-color: #000000;
-  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+  background-color: #f6f6f6;
+  background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+}
+a {
+  text-decoration: none;
+  color: black;
 }
