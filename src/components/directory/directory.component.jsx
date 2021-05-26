@@ -8,7 +8,8 @@ class Directory extends React.Component {
       sections: [
         {
           title: "hats",
-          imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
+          imageUrl:
+            "https://images.unsplash.com/photo-1543352245-63e64ac19e17?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGNhcHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
           id: 1,
           linkUrl: "hats",
         },
@@ -20,7 +21,8 @@ class Directory extends React.Component {
         },
         {
           title: "sneakers",
-          imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
+          imageUrl:
+            "https://images.unsplash.com/photo-1552346154-21d32810aba3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c25lYWtlcnN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
           id: 3,
           linkUrl: "shop/sneakers",
         },
@@ -52,3 +54,4 @@ class Directory extends React.Component {
   }
 }
 export default Directory;
+//https://i.ibb.co/0jqHpnp/sneakers.png
