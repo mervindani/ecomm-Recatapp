@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
-import { setCurrentUser } from "./redux/user.actions";
+import { setCurrentUser } from "./redux/user/user.actions";
 import HomePage from "./page/homepage/homepage.component";
 import ShopPage from "./page/shopPage/shop.component";
 import Header from "./components/header/header.component";
