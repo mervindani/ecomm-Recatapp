@@ -7,13 +7,15 @@ const SHOP_DATA = [
       {
         id: 1,
         name: "Brown Brim",
-        imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+        imageUrl:
+          "https://images.unsplash.com/photo-1595642527925-4d41cb781653?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGF0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
         price: 25,
       },
       {
         id: 2,
         name: "Blue Beanie",
-        imageUrl: "https://i.ibb.co/ypkgK0X/blue-beanie.png",
+        imageUrl:
+          "https://images.unsplash.com/photo-1514327605112-b887c0e61c0a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aGF0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
         price: 18,
       },
       {
@@ -86,7 +88,8 @@ const SHOP_DATA = [
       {
         id: 13,
         name: "Nike White AirForce",
-        imageUrl: "https://i.ibb.co/1RcFPk0/white-nike-high-tops.png",
+        imageUrl:
+          "https://images.unsplash.com/photo-1606471463764-976211e3d71a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmlrZSUyMHdoaXRlJTIwYWlyZm9yY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
         price: 160,
       },
       {
