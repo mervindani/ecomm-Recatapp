@@ -15,15 +15,20 @@ import CheckOutPage from "./page/checkOut/checkout.component";
 import Header from "./components/header/header.component";
 import SignInUp from "./page/signInUp/signInUp.component";
 
+// import pathname from "./page/checkOut/checkout.component";
 import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "./redux/user/user.selectors";
 
 import "./App.css";
+import checkoutComponent from "./page/checkOut/checkout.component";
 
 class App extends React.Component {
   unsubscribeFromAuth = null;
   componentDidMount() {
     const { setCurrentUser } = this.props;
+    // const pathname = CheckOutPage(match);
+    // console.log(pathname);
+
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
@@ -41,6 +46,15 @@ class App extends React.Component {
   componentWillUnmount() {
     this.unsubscribeFromAuth();
   }
+
+  // whereToGo() {
+  //   if (this.props.currentUser.path !== `/checkout`) {
+  //     return `/`;
+  //   } else {
+  //     return `/checkout`;
+  //   }
+  // }
+
   render() {
     return (
       <div>
@@ -61,6 +75,7 @@ class App extends React.Component {
     );
   }
 }
+
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
 });

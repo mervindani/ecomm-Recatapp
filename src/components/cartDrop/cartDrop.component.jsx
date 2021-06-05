@@ -19,14 +19,16 @@ const CartDrop = ({ cartItems, history, dispatch }) => (
         <span className="emptyMessage">Your Cart is Empty</span>
       )}
     </div>
-    <CustomButton
-      onClick={() => {
-        history.push("/checkout");
-        dispatch(toggleCartHidden());
-      }}
-    >
-      CHECKOUT
-    </CustomButton>
+    {cartItems.length ? (
+      <CustomButton
+        onClick={() => {
+          history.push("/checkout");
+          dispatch(toggleCartHidden());
+        }}
+      >
+        CHECKOUT
+      </CustomButton>
+    ) : null}
   </div>
 );
 const mapStateToProps = createStructuredSelector({
