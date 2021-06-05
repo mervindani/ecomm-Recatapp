@@ -14,9 +14,6 @@ import CheckoutItem from "../../components/checkoutItem/checkoutItem.component";
 import "./checkout.style.scss";
 
 const CheckOutPage = ({ cartItems, total, currentUser, match }) => {
-  console.log(match);
-  const pathname = window.location.pathname;
-  console.log(pathname);
   return (
     <div className="checkoutPage">
       <div className="checkoutHeader">
