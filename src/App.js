@@ -17,6 +17,7 @@ import SignInUp from "./page/signInUp/signInUp.component";
 
 // import pathname from "./page/checkOut/checkout.component";
 import { createStructuredSelector } from "reselect";
+
 import { selectCurrentUser } from "./redux/user/user.selectors";
 
 import "./App.css";
