@@ -1,6 +1,5 @@
 import React from "react";
 
-import { auth } from "../../firebase/firebase.utils";
 import { connect } from "react-redux";
 import CartIcon from "../cartIcon/cartIcon.component";
 import CartDrop from "../cartDrop/cartDrop.component";
@@ -18,8 +17,6 @@ import {
   OptionsContainer,
   LinkOption,
 } from "./header.style";
-
-// import "./header.style.scss";
 
 const Header = ({ currentUser, hidden, signOutStart }) => (
   <HeaderContainer>

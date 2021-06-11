@@ -1,5 +1,3 @@
-import storage from "redux-persist/lib/storage";
-
 const INITIAL_STATE = {
   sections: [
     {
