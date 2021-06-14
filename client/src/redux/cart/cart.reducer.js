@@ -29,6 +29,7 @@ const cartReducer = (state = INITIAL_STATE, action) => {
         ),
       };
     case CartActionTypes.CLEAR_CART:
+    case CartActionTypes.CHECK_OUT_SUCCESS:
       return {
         ...state,
         cartItems: [],
