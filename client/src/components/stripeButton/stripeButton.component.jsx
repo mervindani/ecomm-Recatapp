@@ -13,7 +13,7 @@ const StripeCheckoutButton = ({ price, clearCartCheckOut }) => {
       amount: priceForStripe,
       token,
     };
-    fetch("http://localhost:3000/payment", {
+    fetch("https://e-clothlive.herokuapp.com/payment", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
