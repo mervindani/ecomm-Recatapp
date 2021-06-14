@@ -8,12 +8,19 @@ const StripeCheckoutButton = ({ price, clearCartCheckOut }) => {
   const publishableKey =
     "pk_test_51IyD74SFuXyiRaj4cJwG5Ru9kHMib86oSXTgrRiqW8PKPmxTSRjZK0PqydGXVcHN3kiZbIPaeyQvFKHgJf9LFmXZ00OWdhVtLN";
 
+  let url = "";
+  if (process.env.NODE_ENV === "production") {
+    url = "https://e-clothlive.herokuapp.com/payment";
+  } else {
+    url = "http://localhost:3000/payment";
+  }
+
   const onToken = (token) => {
     const data = {
       amount: priceForStripe,
       token,
     };
-    fetch("https://e-clothlive.herokuapp.com/payment", {
+    fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -24,7 +31,7 @@ const StripeCheckoutButton = ({ price, clearCartCheckOut }) => {
       .then((data) => {
         clearCartCheckOut();
         alert("payment successfull");
-        console.log("Success:", data);
+        console.log("Success:");
       })
       .catch((error) => {
         console.error("Error:", error);
