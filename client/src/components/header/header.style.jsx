@@ -13,6 +13,8 @@ export const HeaderContainer = styled.div`
     padding: 10px;
     height: 60px;
     margin-bottom: 20px;
+
+    -webkit-tap-highlight-color: transparent;
   }
 `;
 
@@ -35,7 +37,7 @@ export const OptionsContainer = styled.div`
   font-size: 22px;
   @media screen and (max-width: 800px) {
     width: 80%;
-    font-size: 15px;
+    font-size: 20px;
   }
 `;
 
