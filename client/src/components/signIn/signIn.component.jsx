@@ -29,7 +29,8 @@ const SignIn = ({ emailSigninStart, googleSigninStart }) => {
     <div className="signIn">
       <h4>I already have an account</h4>
       <span>sign in with your email and password</span>
-      <form onSubmit={handleSubmit}>
+
+      <form onSubmit={handleSubmit} className="formInp">
         <FormInput
           type="email"
           name="email"
@@ -49,6 +50,7 @@ const SignIn = ({ emailSigninStart, googleSigninStart }) => {
           handleChange={handleChange}
           value={password}
         />
+
         <div className="button">
           <CustomButton type="submit">Sign in</CustomButton>
           <CustomButton

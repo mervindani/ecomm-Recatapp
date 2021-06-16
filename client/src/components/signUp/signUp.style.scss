@@ -2,6 +2,16 @@
   display: flex;
   flex-direction: column;
   width: 380px;
+
+  @media screen and (max-width: 400px) {
+    width: 310px;
+  }
+  .signUpForm {
+    @media screen and (max-width: 400px) {
+      width: 310px;
+    }
+  }
+
   .title {
     margin: 10px 0;
   }

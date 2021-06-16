@@ -2,6 +2,14 @@
   width: 380px;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 400px) {
+    width: 310px;
+  }
+  .formInp {
+    @media screen and (max-width: 400px) {
+      width: 310px;
+    }
+  }
 
   .title {
     margin: 10px 0;
@@ -15,8 +23,16 @@ h4 {
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 1px;
+  @media screen and (max-width: 800px) {
+    font-size: 25px;
+    font-weight: normal;
+  }
 }
 span {
   font-size: 22px;
   font-weight: lighter;
+  @media screen and (max-width: 800px) {
+    font-size: 18px;
+    font-weight: normal;
+  }
 }

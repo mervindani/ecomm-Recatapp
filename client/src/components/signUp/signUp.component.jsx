@@ -68,7 +68,9 @@ const SignUp = ({ signUpStart }) => {
           onChange={handleChange}
           value={confirmPassword}
         />
-        <CustomButton type="submit">Sign Up</CustomButton>
+        <CustomButton className="signUpBtn" type="submit">
+          Sign Up
+        </CustomButton>
       </form>
     </div>
   );

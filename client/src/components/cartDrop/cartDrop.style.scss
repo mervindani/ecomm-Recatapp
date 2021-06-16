@@ -10,6 +10,7 @@
   top: 90px;
   right: 40px;
   z-index: 5;
+  border-radius: 15px;
 
   ::-webkit-scrollbar {
     display: none;
@@ -26,5 +27,8 @@
 
   button {
     margin-top: auto;
+    @media screen and (max-width: 400px) {
+      font-size: unset;
+    }
   }
 }

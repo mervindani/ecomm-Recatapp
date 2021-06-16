@@ -5,6 +5,7 @@
   align-items: center;
   height: 350px;
   position: relative;
+
   .image {
     width: 100%;
     height: 95%;
@@ -19,6 +20,13 @@
     position: absolute;
     top: 255px;
     display: none;
+    @media screen and (max-width: 800px) {
+      display: block;
+      opacity: 0.9;
+      min-width: unset;
+      padding: 0 10px;
+      font-size: 13px;
+    }
   }
   &:hover {
     .image {
@@ -29,6 +37,18 @@
       display: flex;
     }
   }
+  @media screen and (max-width: 800px) {
+    width: 40vw;
+    &:hover {
+      .image {
+        opacity: unset;
+      }
+      .customButton {
+        opacity: unset;
+      }
+    }
+  }
+
   &:active {
     .customButton {
       opacity: 0.5;
@@ -46,10 +66,18 @@
     .name {
       width: 90%;
       margin-bottom: 15px;
+      font-size: 18px;
+      @media screen and (max-width: 800px) {
+        font-size: 16px;
+      }
     }
     .price {
       width: 10%;
       margin-bottom: 15px;
+      font-size: 16px;
+      @media screen and (max-width: 800px) {
+        font-size: 15px;
+      }
     }
   }
 }

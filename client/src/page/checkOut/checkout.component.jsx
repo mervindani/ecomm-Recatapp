@@ -21,7 +21,7 @@ const CheckOutPage = ({ cartItems, total, currentUser, match }) => {
           <span>Product</span>
         </div>
         <div className="headerBlock">
-          <span>Description</span>
+          <span>Name</span>
         </div>
         <div className="headerBlock">
           <span>Quantity</span>
@@ -54,7 +54,9 @@ const signedInCheckPay = (currentUser, total) => {
     return <StripeCheckoutButton price={total} />;
   } else if (!currentUser) {
     return (
-      <div className="signedPay">you must be signed in for making payments</div>
+      <div className="signedPay">
+        /*you must be signed in for making payments*/
+      </div>
     );
   }
 };

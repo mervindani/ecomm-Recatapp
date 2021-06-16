@@ -11,3 +11,8 @@ a {
   box-sizing: border-box;
 }
 /*  */
+@media screen and (max-width: 800px) {
+  body {
+    padding: 10px;
+  }
+}

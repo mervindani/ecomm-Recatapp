@@ -1,19 +1,32 @@
 .collectionPage {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
+  @media screen and (max-width: 800px) {
+    align-items: center;
+  }
 
   .title {
-    font-size: 38px;
+    font-size: 25px;
     margin: 0 auto 30px;
+    @media screen and (max-width: 800px) {
+      font-weight: inherit;
+    }
   }
 
   .items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
-
-    & .collectionItem {
+    & > div {
       margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 800px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
   }
 }
